@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using FitCRM.DTOs;
 using FitCRM.Models;
-using FitCRM.MyServices.IServices;
+using FitCRM.MyCruds.ICruds;
 
 namespace FitCRM.Controllers
 {
@@ -10,40 +10,40 @@ namespace FitCRM.Controllers
     [ApiController]
     public class GymController : ControllerBase
     {
-        private readonly IGymService _gymService;
-        public GymController(IGymService gymRepo)
+        private readonly IGymCrud _gymCrud;
+        public GymController(IGymCrud gymRepo)
         {
-            _gymService = gymRepo;
+            _gymCrud = gymRepo;
         }
 
         [HttpGet]
         public IEnumerable<GYMmodel> GetAll()
         {
-            IEnumerable<GYMmodel>? x = _gymService.GetAll();
+            IEnumerable<GYMmodel>? x = _gymCrud.GetAll();
             return x;
         }
         [HttpGet]
         public GYMmodel GetById(int id)
         {
-            GYMmodel? x = _gymService.GetByID(id);
+            GYMmodel? x = _gymCrud.GetByID(id);
             return x;
         }
         [HttpPost]
         public string Create(GYMmodelDTO gym)
         {
-            string? x = _gymService.Create(gym);
+            string? x = _gymCrud.Create(gym);
             return x;
         }
         [HttpDelete]
         public string Delete(int id)
         {
-            string? x = _gymService.DeleteByID(id);
+            string? x = _gymCrud.DeleteByID(id);
             return x;
         }
         [HttpPut]
         public string Update(int id, GYMmodelDTO gym)
         {
-            string? x = _gymService.Update(id, gym);
+            string? x = _gymCrud.Update(id, gym);
             return x;
         }
     }
