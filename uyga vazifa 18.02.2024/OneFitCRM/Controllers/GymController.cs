@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using FitCRM.DTOs;
 using FitCRM.Models;
-using FitCRM.MyCruds.ICruds;
+using FitCRM.Repository.gymCRUD;
 
 namespace FitCRM.Controllers
 {
@@ -10,8 +10,8 @@ namespace FitCRM.Controllers
     [ApiController]
     public class GymController : ControllerBase
     {
-        private readonly IGymCrud _gymCrud;
-        public GymController(IGymCrud gymRepo)
+        private readonly IGymCRUD _gymCrud;
+        public GymController(IGymCRUD gymRepo)
         {
             _gymCrud = gymRepo;
         }
