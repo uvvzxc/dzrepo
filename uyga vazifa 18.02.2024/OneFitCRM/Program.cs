@@ -1,4 +1,4 @@
-using FitCRM.Repository.gymCRUD;
+using FitCRM.Repository.igymCRUD;
 
 var builder = WebApplication.CreateBuilder(args);
 
