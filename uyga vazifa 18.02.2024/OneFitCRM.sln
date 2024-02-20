@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneFitCRM", "OneFitCRM\OneFitCRM.csproj", "{BBF858BF-0E6E-425B-8BEE-E7E8D668CF5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBF858BF-0E6E-425B-8BEE-E7E8D668CF5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF858BF-0E6E-425B-8BEE-E7E8D668CF5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF858BF-0E6E-425B-8BEE-E7E8D668CF5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF858BF-0E6E-425B-8BEE-E7E8D668CF5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B66344AD-DB17-4BCE-A19D-CB9CEE06B051}
+	EndGlobalSection
+EndGlobal
